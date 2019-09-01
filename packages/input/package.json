@@ -5,8 +5,8 @@
     "author": "chef <serhii.havrylenko@gmail.com>",
     "homepage": "https://github.com/serhii-havrylenko/monorepo-babel-ts-lerna-starter",
     "license": "MIT",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
+    "main": "lib/index",
+    "types": "lib/index",
     "files": [
         "lib"
     ],

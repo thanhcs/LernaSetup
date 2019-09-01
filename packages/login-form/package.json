@@ -2,8 +2,8 @@
     "name": "@thanhcs/login-form",
     "version": "0.0.4",
     "description": "Login form component",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
+    "main": "lib/index",
+    "types": "lib/index",
     "author": "chef",
     "license": "MIT",
     "peerDependencies": {
