@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
 `;
 
 const ButtonsWrapper = styled.div`
