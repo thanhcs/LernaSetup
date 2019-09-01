@@ -6,24 +6,20 @@
     "types": "lib/index.d.ts",
     "author": "chef",
     "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/serhii-havrylenko/monorepo-babel-ts-lerna-starter.git"
-    },
     "peerDependencies": {
         "react": "^16.5.1",
         "styled-components": "^3.4.6"
     },
     "scripts": {
-        "tsc": "tsc --project tsconfig.json"
+        "tsc": "tsc --project tsconfig.build.json"
     },
     "files": [
         "lib"
     ],
-    "dependencies": {
-        "@thanhcs/input": "^0.1.0"
-    },
     "publishConfig": {
         "registry": "http://localhost:4873"
+    },
+    "dependencies": {
+        "@thanhcs/input": "^0.1.0"
     }
 }
