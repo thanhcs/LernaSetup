@@ -22,5 +22,5 @@
         "test": "echo \"Error: run tests from root\" && exit 1",
         "prepublishOnly": "tsc"
     },
-    "gitHead": "1bc54ec84eea343b163447fa33f479223fe1e7ad"
+    "extends": "../../babel.config.js"
 }
