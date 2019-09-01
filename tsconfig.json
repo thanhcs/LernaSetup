@@ -11,6 +11,8 @@
         "rootDir": "./",
         "baseUrl": "./",
         "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
         "noImplicitAny": false,
         "composite": true,
         "paths": {

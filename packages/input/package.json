@@ -17,5 +17,8 @@
     "publishConfig": {
         "registry": "http://localhost:4873"
     },
-    "extends": "../../babel.config.js"
+    "extends": "../../babel.config.js",
+    "scripts": {
+        "tsc": "tsc --project tsconfig.json"
+    }
 }

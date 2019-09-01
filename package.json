@@ -1,96 +1,98 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-typescript": "^7.3.3",
-    "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-knobs": "^5.1.11",
-    "@storybook/addon-links": "^5.1.11",
-    "@storybook/addons": "^5.1.11",
-    "@storybook/react": "^5.1.11",
-    "@types/enzyme": "^3.10.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.3",
-    "@types/react": "16.9.2",
-    "@types/react-color": "^3.0.1",
-    "@types/react-dom": "16.9.0",
-    "@types/storybook__addon-actions": "^3.4.3",
-    "@types/storybook__addon-knobs": "^5.0.3",
-    "@types/storybook__addon-links": "^3.3.5",
-    "@types/storybook__react": "^4.0.2",
-    "@types/styled-components": "^4.1.18",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-loader": "^8.0.6",
-    "commitizen": "^4.0.3",
-    "cz-lerna-changelog": "^2.0.2",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.0.0-beta6",
-    "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "husky": "^3.0.4",
-    "jest": "^24.9.0",
-    "jest-styled-components": "^6.3.3",
-    "lerna": "^3.16.4",
-    "lint-staged": "^9.2.5",
-    "moment": "^2.24.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "styled-components": "^4.3.2",
-    "styled-components-ts": "0.0.15",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.6.2",
-    "webpack": "^4.39.3"
-  },
-  "dependencies": {},
-  "scripts": {
-    "build-storybook": "build-storybook",
-    "fix": "eslint . --fix",
-    "tsc": "tsc",
-    "test": "jest",
-    "commit": "git-cz",
-    "prebuild": "run-p tsc fix",
-    "build": "lerna exec --parallel 'BABEL_ENV=build babel src --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments'",
-    "postbuild": "build:declarations",
-    "preRelease": "build",
-    "release": "lerna publish",
-    "storybook": "start-storybook -p 6006",
-    "build:declarations": "lerna exec --parallel 'tsc --project ./tsconfig.build.json'"
-  },
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsc --noEmit && lint-staged"
+    "name": "root",
+    "private": true,
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/preset-typescript": "^7.3.3",
+        "@storybook/addon-actions": "^5.1.11",
+        "@storybook/addon-knobs": "^5.1.11",
+        "@storybook/addon-links": "^5.1.11",
+        "@storybook/addons": "^5.1.11",
+        "@storybook/react": "^5.1.11",
+        "@types/enzyme": "^3.10.3",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^24.0.18",
+        "@types/node": "^12.7.3",
+        "@types/react": "16.9.2",
+        "@types/react-color": "^3.0.1",
+        "@types/react-dom": "16.9.0",
+        "@types/storybook__addon-actions": "^3.4.3",
+        "@types/storybook__addon-knobs": "^5.0.3",
+        "@types/storybook__addon-links": "^3.3.5",
+        "@types/storybook__react": "^4.0.2",
+        "@types/styled-components": "^4.1.18",
+        "@typescript-eslint/eslint-plugin": "^2.0.0",
+        "@typescript-eslint/parser": "^2.0.0",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-loader": "^8.0.6",
+        "commitizen": "^4.0.3",
+        "cross-env": "^5.2.1",
+        "cz-lerna-changelog": "^2.0.2",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-react-16": "^1.14.0",
+        "enzyme-to-json": "^3.0.0-beta6",
+        "eslint": "^6.3.0",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-react": "^7.14.3",
+        "husky": "^3.0.4",
+        "jest": "^24.9.0",
+        "jest-styled-components": "^6.3.3",
+        "lerna": "^3.16.4",
+        "lint-staged": "^9.2.5",
+        "moment": "^2.24.0",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^1.18.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "styled-components": "^4.3.2",
+        "styled-components-ts": "0.0.15",
+        "ts-jest": "^24.0.2",
+        "typescript": "^3.6.2",
+        "webpack": "^4.39.3"
+    },
+    "dependencies": {},
+    "scripts": {
+        "fix": "eslint . --fix",
+        "tsc": "tsc",
+        "test": "jest",
+        "commit": "git-cz",
+        "prebuild": "run-p tsc fix",
+        "build:declarations": "lerna exec --parallel -- tsc --project ./tsconfig.json",
+        "build": "lerna exec --parallel -- cross-env SET BABEL_ENV=build babel src --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "postbuild": "build:declarations",
+        "preRelease": "build",
+        "release": "lerna publish",
+        "build-storybook": "build-storybook",
+        "storybook": "start-storybook -p 6006",
+        "clean": "rimraf packages/*/{lib,dist}"
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsc --noEmit && lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx,jsx}": [
+            "prettier --single-quote --write",
+            "eslint --fix",
+            "git add"
+        ]
+    },
+    "resolutions": {
+        "babel-core": "^7.0.0-bridge.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-lerna-changelog"
+        }
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx,jsx}": [
-      "prettier --single-quote --write",
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "resolutions": {
-    "babel-core": "^7.0.0-bridge.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
-    }
-  }
 }

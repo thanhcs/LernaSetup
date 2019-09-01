@@ -1,0 +1,29 @@
+{
+    "name": "@thanhcs/login-form",
+    "version": "0.0.1",
+    "description": "Login form component",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "author": "chef",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/serhii-havrylenko/monorepo-babel-ts-lerna-starter.git"
+    },
+    "peerDependencies": {
+        "react": "^16.5.1",
+        "styled-components": "^3.4.6"
+    },
+    "scripts": {
+        "tsc": "tsc --project tsconfig.json"
+    },
+    "files": [
+        "lib"
+    ],
+    "dependencies": {
+        "@thanhcs/input": "^0.1.0"
+    },
+    "publishConfig": {
+        "registry": "http://localhost:4873"
+    }
+}
