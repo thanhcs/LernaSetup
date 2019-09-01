@@ -1,0 +1,26 @@
+{
+    "name": "@thanhcs/test1",
+    "version": "0.0.1",
+    "description": "test package",
+    "author": "Thanh Nguyen thanhnguyencs@outlook.com",
+    "homepage": "http://test.thanhnguyencs.io",
+    "license": "ISC",
+    "main": "lib/index.ts",
+    "typings": "lib/index.d.ts",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "tsc": "tsc",
+        "test": "echo \"Error: run tests from root\" && exit 1",
+        "prepublishOnly": "tsc"
+    },
+    "gitHead": "1bc54ec84eea343b163447fa33f479223fe1e7ad"
+}

@@ -1,0 +1,41 @@
+{
+    "name": "root",
+    "private": true,
+    "devDependencies": {
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "@types/react": "16.9.2",
+        "@types/react-dom": "16.9.0",
+        "@types/node": "^12.7.3",
+        "@typescript-eslint/eslint-plugin": "^2.0.0",
+        "@typescript-eslint/parser": "^2.0.0",
+        "eslint": "^6.3.0",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-react": "^7.14.3",
+        "husky": "^3.0.4",
+        "lerna": "^3.16.4",
+        "lint-staged": "^9.2.5",
+        "prettier": "^1.18.2",
+        "typescript": "^3.6.2"
+    },
+    "dependencies": {},
+    "scripts": {
+        "publish": "lerna run tsc && lerna publish"
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsc --noEmit && lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx,jsx}": [
+            "eslint --fix",
+            "git add"
+        ]
+    }
+}
