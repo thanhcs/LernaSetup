@@ -16,9 +16,6 @@
     "files": [
         "lib"
     ],
-    "publishConfig": {
-        "registry": "http://localhost:4873"
-    },
     "dependencies": {
         "@thanhcs/input": "^0.1.11"
     }
