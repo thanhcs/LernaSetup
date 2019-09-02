@@ -17,6 +17,6 @@
         "lib"
     ],
     "dependencies": {
-        "@thanhcs/input": "^0.1.11"
+        "@thanhcs/input": "^0.1.12"
     }
 }
