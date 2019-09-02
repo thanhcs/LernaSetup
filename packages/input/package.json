@@ -8,7 +8,8 @@
     "main": "lib/index.ts",
     "typings": "lib/index.d.ts",
     "files": [
-        "lib"
+        "lib/**",
+        "CHANGELOG.md"
     ],
     "peerDependencies": {
         "react": "^16.5.1",
