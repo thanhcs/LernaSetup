@@ -68,7 +68,8 @@
         "build": "lerna exec --parallel -- cross-env BABEL_ENV=build babel src --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
         "postbuild": "lerna exec --stream -- tsc --project ./tsconfig.build.json",
         "prerelease": "run-p clean build",
-        "release": "lerna publish --contents lib",
+        "release": "lerna publish",
+        "postpublish": "npm-p clean",
         "build-storybook": "build-storybook",
         "storybook": "start-storybook -p 6006"
     },
