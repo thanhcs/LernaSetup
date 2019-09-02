@@ -62,15 +62,15 @@
         "tsc": "tsc",
         "test": "jest",
         "commit": "git-cz",
+        "bootstrap": "lerna bootstrap",
+        "clean": "rimraf packages/*/{*.build.tsbuildinfo,lib,dist,node_modules}",
         "prebuild": "run-p tsc fix bootstrap",
         "build": "lerna exec --parallel -- cross-env BABEL_ENV=build babel src --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
         "postbuild": "lerna exec --stream -- tsc --project ./tsconfig.build.json",
         "prerelease": "run-p clean build",
-        "release": "lerna publish",
+        "release": "lerna publish --contents lib",
         "build-storybook": "build-storybook",
-        "storybook": "start-storybook -p 6006",
-        "clean": "rimraf packages/*/{*.build.tsbuildinfo,lib,dist,node_modules}",
-        "bootstrap": "lerna bootstrap"
+        "storybook": "start-storybook -p 6006"
     },
     "exclude": [
         "node_modules",
