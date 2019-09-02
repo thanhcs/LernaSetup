@@ -24,7 +24,7 @@ export interface InputProps {
 
 const Wrapper = styled.div`
     display: flex;
-    margin: 10px;
+    margin: 15px;
 `;
 
 const NativeInput = styled.input`
