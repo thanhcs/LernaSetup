@@ -20,6 +20,6 @@
         "registry": "http://localhost:4873"
     },
     "dependencies": {
-        "@thanhcs/input": "^0.1.12"
+        "@thanhcs/input": "^0.1.11"
     }
 }
