@@ -73,7 +73,7 @@
         "postbuild": "lerna exec --stream -- tsc --project ./tsconfig.build.json",
         "prerelease": "run-p clean build",
         "release": "lerna publish",
-        "alpharelease": "run-p prerelease alphapublish",
+        "alpharelease": "prerelease & alphapublish",
         "betarelease": "run-p prerelease betapublish",
         "build-storybook": "build-storybook",
         "storybook": "start-storybook -p 6006",
