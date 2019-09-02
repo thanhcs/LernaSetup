@@ -14,8 +14,7 @@
         "tsc": "tsc --project tsconfig.build.json"
     },
     "files": [
-        "lib/**",
-        "CHANGELOG.md"
+        "lib"
     ],
     "publishConfig": {
         "registry": "http://localhost:4873"
