@@ -3,6 +3,8 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+// add beta alpha versions
+
 ## [0.0.15](https://github.com/thanhcs/LernaSetup/compare/@thanhcs/login-form@0.0.14...@thanhcs/login-form@0.0.15) (2019-09-02)
 
 **Note:** Version bump only for package @thanhcs/login-form
