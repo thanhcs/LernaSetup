@@ -21,6 +21,5 @@
     },
     "dependencies": {
         "@thanhcs/input": "^0.1.12"
-    },
-    "gitHead": "03b1926b1bf6acab398a786d3d58d73f6fc7a7a1"
+    }
 }

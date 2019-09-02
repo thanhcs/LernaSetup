@@ -20,6 +20,5 @@
     "extends": "../../babel.config.js",
     "scripts": {
         "tsc": "tsc --project tsconfig.json"
-    },
-    "gitHead": "03b1926b1bf6acab398a786d3d58d73f6fc7a7a1"
+    }
 }
