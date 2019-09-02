@@ -5,11 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.1.9](https://github.com/thanhcs/LernaSetup/compare/@thanhcs/input@0.1.8...@thanhcs/input@0.1.9) (2019-09-02)
 
-**Note:** Version bump only for package @thanhcs/input
-
-
-
-
+**Note:** Version bump only for package @thanhcs/input - failed to test update one package only
 
 ## [0.1.8](https://github.com/thanhcs/LernaSetup/compare/@thanhcs/input@0.1.7...@thanhcs/input@0.1.8) (2019-09-02)
 
