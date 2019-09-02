@@ -1,6 +1,6 @@
 {
     "name": "@thanhcs/login-form",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "Login form component",
     "main": "lib/index.ts",
     "typings": "lib/index.d.ts",
@@ -20,6 +20,6 @@
         "registry": "http://localhost:4873"
     },
     "dependencies": {
-        "@thanhcs/input": "^0.1.11"
+        "@thanhcs/input": "^0.1.12"
     }
 }
