@@ -12,6 +12,7 @@ module.exports = {
         ecmaFeatures: {
             jsx: true, // Allows for the parsing of JSX
         },
+        project: './tsconfig.eslint.json',
     },
     rules: {
         'react/prop-types': 0,
