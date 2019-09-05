@@ -15,7 +15,6 @@
         "sourceMap": true,
         "noImplicitAny": false,
         "composite": true,
-        "skipLibCheck": true,
         "paths": {
             "@thanhcs/*": ["packages/*/src"],
             "*": ["node_modules", "packages"]
