@@ -15,6 +15,7 @@
         "sourceMap": true,
         "noImplicitAny": false,
         "composite": true,
+        "skipLibCheck": true,
         "paths": {
             "@thanhcs/*": ["packages/*/src"],
             "*": ["node_modules", "packages"]
@@ -26,5 +27,5 @@
         "babelCore": "@babel/core"
     },
     "include": ["packages"],
-    "exclude": ["node_modules", "packages/**/lib"]
+    "exclude": ["node_modules", "packages/**/lib", "packages/**/node_modules"]
 }

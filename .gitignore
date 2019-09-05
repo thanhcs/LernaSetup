@@ -5,3 +5,4 @@ packages/*/lib
 .idea
 storybook-static/
 tsconfig.build.tsbuildinfo
+packages/*/package-lock.json
