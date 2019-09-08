@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.16](https://github.com/thanhcs/LernaSetup/compare/@thanhcs/input@0.1.15...@thanhcs/input@0.1.16) (2019-09-08)
+
+**Note:** Version bump only for package @thanhcs/input
+
+
+
+
+
+
 ## [0.1.15](https://github.com/thanhcs/LernaSetup/compare/@thanhcs/input@0.1.14...@thanhcs/input@0.1.15) (2019-09-05)
 
 **Note:** Version bump only for package @thanhcs/input

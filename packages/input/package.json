@@ -1,6 +1,6 @@
 {
     "name": "@thanhcs/input",
-    "version": "0.1.15",
+    "version": "0.1.16",
     "description": "Input component",
     "author": "chef <serhii.havrylenko@gmail.com>",
     "homepage": "https://github.com/serhii-havrylenko/monorepo-babel-ts-lerna-starter",
