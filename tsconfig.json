@@ -19,7 +19,7 @@
             "@thanhcs/*": ["packages/*/src"],
             "*": ["node_modules", "packages"]
         },
-        "types": ["react", "jest"]
+        "types": ["react", "jest", "node"]
     },
     "awesomeTypescriptLoaderOptions": {
         "useBabel": true,

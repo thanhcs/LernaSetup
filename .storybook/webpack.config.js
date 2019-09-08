@@ -13,17 +13,17 @@ const basePath = path.resolve(__dirname, '../', 'packages');
 const packages = readdirSync(basePath).filter(name => lstatSync(path.join(basePath, name)).isDirectory());
 
 module.exports = ({ baseConfig, env, config }) => {
+    config.module.rules = config.module.rules.filter(rule => !(
+        (rule.use && rule.use.length && rule.use.find(({ loader }) => loader === 'babel-loader'))
+    ));
     config.module.rules.push({
         test: /\.(ts|tsx)$/,
-        use: [
-            {
-                loader: require.resolve('awesome-typescript-loader'),
-            },
-            ,
-            {
-                loader: require.resolve('react-docgen-typescript-loader'),
-            },
-        ],
+        loader: require.resolve('babel-loader'),
+        options: {
+            sourceType: 'unambiguous',
+            presets: [['react-app', { flow: false, typescript: true }]],
+        },
+
     });
     config.resolve.extensions.push('.ts', '.tsx');
     Object.assign(config.resolve.alias, {

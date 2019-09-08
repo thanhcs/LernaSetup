@@ -7,8 +7,7 @@
     "author": "chef",
     "license": "MIT",
     "peerDependencies": {
-        "react": "^16.5.1",
-        "styled-components": "^3.4.6"
+        "react": "^16.5.1"
     },
     "scripts": {
         "tsc": "tsc --project tsconfig.build.json"
@@ -17,6 +16,7 @@
         "lib"
     ],
     "dependencies": {
-        "@thanhcs/input": "^0.1.15"
+        "@thanhcs/input": "^0.1.15",
+        "styled-components": "^3.4.6"
     }
 }
