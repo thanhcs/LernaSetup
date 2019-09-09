@@ -13,6 +13,7 @@ const basePath = path.resolve(__dirname, '../', 'packages');
 const packages = readdirSync(basePath).filter(name => lstatSync(path.join(basePath, name)).isDirectory());
 
 module.exports = ({ baseConfig, env, config }) => {
+    // https://github.com/storybookjs/storybook/issues/3346
     config.module.rules = config.module.rules.filter(rule => !(
         (rule.use && rule.use.length && rule.use.find(({ loader }) => loader === 'babel-loader'))
     ));
