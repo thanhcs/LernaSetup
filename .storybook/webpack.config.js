@@ -24,7 +24,16 @@ module.exports = ({ baseConfig, env, config }) => {
             sourceType: 'unambiguous',
             presets: [['react-app', { flow: false, typescript: true }]],
         },
-
+    });
+    config.module.rules.push({
+        test: /\.(js|jsx)$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: require.resolve('babel-loader'),
+          options: {
+            presets: ['@babel/preset-react', '@babel/env'],
+          },
+        },
     });
     config.resolve.extensions.push('.ts', '.tsx');
     Object.assign(config.resolve.alias, {
