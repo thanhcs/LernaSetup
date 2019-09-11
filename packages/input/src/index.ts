@@ -1,5 +1,5 @@
 import { InputProps } from './Input';
-import TestType from './type';
+import TestType from './types/type';
 
 export { Input } from './Input';
 export type InputType = InputProps;
